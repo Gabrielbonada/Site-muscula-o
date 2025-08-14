@@ -1,0 +1,205 @@
+<!-- ================================ -->
+<!-- index.html -->
+<!-- ================================ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Fit - Login</title>
+
+  <!-- Bootstrap CSS (versão CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Fonte personalizada Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="aluno.css" />
+</head>
+
+<body>
+  <!-- ========== NAVBAR ========== -->
+  <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-warning shadow-sm">
+    <div class="container">
+      <!-- Marca / Logo -->
+      <a id="logo" class="navbar-brand fw-bold text-dark" href="#">SMART FIT</a>
+
+      <!-- Botão toggle para menu responsivo -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links de navegação -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto" style="gap: 30px;">
+          <li class="nav-item">
+            <a class="nav-link active text-dark fw-bold" href="index.html">Sobre nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark fw-bold" href="cardapio.html">Consultoria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark fw-bold" href="pedido.html">Planos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark fw-bold" href="pedido.html">Já é aluno? </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ========== FORMULÁRIO DE AVALIAÇÃO ========== -->
+<section class="py-5 text-dark">
+  <div class="container">
+    <h2 class="text-center text-light mb-4">Agende sua Avaliação Gratuita</h2>
+    <p class="text-center text-light mb-5">Preencha o formulário e nossa equipe entrará em contato com você.</p>
+
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="nome" class="form-label text-light">Nome completo</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="email" class="form-label text-light">E-mail</label>
+        <input type="email" class="form-control" id="email" placeholder="exemplo@email.com" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="telefone" class="form-label text-light">Telefone/WhatsApp</label>
+        <input type="tel" class="form-control" id="telefone" placeholder="(XX) 99999-9999" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="unidade" class="form-label text-light">Unidade mais próxima</label>
+        <select class="form-select" id="unidade" required>
+          <option selected disabled value="">Escolha uma unidade</option>
+          <option>Centro</option>
+          <option>Zona Norte</option>
+          <option>Zona Sul</option>
+          <option>Outra</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="objetivo" class="form-label text-light">Objetivo</label>
+        <select class="form-select" id="objetivo" required>
+          <option selected disabled value="">Selecione</option>
+          <option>Emagrecimento</option>
+          <option>Hipertrofia</option>
+          <option>Condicionamento</option>
+          <option>Reabilitação</option>
+          <option>Outro</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="horario" class="form-label text-light">Melhor horário para contato</label>
+        <select class="form-select" id="horario" required>
+          <option selected disabled value="">Escolha um horário</option>
+          <option>Manhã</option>
+          <option>Tarde</option>
+          <option>Noite</option>
+        </select>
+      </div>
+
+      <div class="col-12 text-center mt-4">
+        <button type="submit" class="btn btn-warning px-5 fw-bold text-dark">Enviar</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+  
+
+  <!-- Botão flutuante do WhatsApp -->
+
+  <a href="https://wa.me/5551999999999" target="_blank" class="whatsapp-float" aria-label="Converse pelo WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 512 512">
+      <circle cx="256" cy="256" r="256" fill="#25D366" />
+      <path fill="#fff"
+        d="M256 128c-70.7 0-128 57.3-128 128 0 22.8 6.2 44.5 17.9 63.7l-18.9 55.6 57.8-18.1c18.4 10.5 39.2 16.1 60.2 16.1 70.7 0 128-57.3 128-128S326.7 128 256 128zm0 230.4c-17.5 0-34.8-4.6-50.1-13.2l-3.6-2.1-34.3 10.7 11.3-33.2-2.4-3.7c-10.2-15.7-15.6-33.9-15.6-52.2 0-54.1 44-98.1 98.1-98.1s98.1 44 98.1 98.1-44 98.1-98.1 98.1z" />
+    </svg>
+  </a>
+  </section>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <section class="juncaofooter">
+      <p class="mb-0">&copy; 2025 Companhia das pizzas. Todos os direitos reservados. | Contato: (51) 99999-9999</p>
+      <!-- primeira rede social -->
+      <a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+          <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fd5"></stop>
+            <stop offset=".328" stop-color="#ff543f"></stop>
+            <stop offset=".348" stop-color="#fc5245"></stop>
+            <stop offset=".504" stop-color="#e64771"></stop>
+            <stop offset=".643" stop-color="#d53e91"></stop>
+            <stop offset=".761" stop-color="#cc39a4"></stop>
+            <stop offset=".841" stop-color="#c837ab"></stop>
+          </radialGradient>
+          <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+            d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+          </path>
+          <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813"
+            gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#4168c9"></stop>
+            <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+          </radialGradient>
+          <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+            d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+          </path>
+          <path fill="#fff"
+            d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+          </path>
+          <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+          <path fill="#fff"
+            d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+          </path>
+        </svg>
+      </a>
+      <!-- segunda rede social -->
+      <a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+          <path fill="#fff"
+            d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6	C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z">
+          </path>
+          <path fill="#fff"
+            d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6	C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3	L5,43.8C5,43.8,4.9,43.8,4.9,43.8z">
+          </path>
+          <path fill="#cfd8dc"
+            d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3	L4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24	c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2	c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z">
+          </path>
+          <path fill="#40c351"
+            d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8	l6-1.6l0.6,0.3c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z">
+          </path>
+          <path fill="#fff" fill-rule="evenodd"
+            d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0	s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3	c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9	c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8	c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8C20.6,19.3,19.7,17,19.3,16z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </a>
+      <!-- terceira rede social -->
+      <a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+          <path
+            d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z">
+          </path>
+        </svg>
+      </a>
+    </section>
+  </footer>
+
+  <!-- JS personalizado -->
+  <script src="index.js"></script>
+
+  <!-- Bootstrap Bundle JS (inclui Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
